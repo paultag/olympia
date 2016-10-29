@@ -1,3 +1,10 @@
+olympia (1.0.0+nmu1) UNRELEASED; urgency=medium
+
+  * Change -desktop to depend on pm-utils to help with power
+    management.
+
+ -- Paul Tagliamonte <tag@pault.ag>  Sat, 29 Oct 2016 14:15:34 -0400
+
 olympia (1.0.0) olympia-unstable; urgency=low
 
   * Initial packaging.
