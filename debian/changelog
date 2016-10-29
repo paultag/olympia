@@ -1,5 +1,5 @@
-olympia (1.0.0) UNRELEASED; urgency=low
+olympia (1.0.0) olympia-unstable; urgency=low
 
   * Initial packaging.
 
- -- Paul Tagliamonte <tag@pault.ag>  Thu, 25 Oct 2012 22:52:26 -0400
+ -- Paul Tagliamonte <tag@pault.ag>  Sat, 29 Oct 2016 12:22:25 -0400
