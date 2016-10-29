@@ -206,7 +206,6 @@ Architecture: all
 Depends: ${misc:Depends},
  network-manager-strongswan,
  redshift,
- pm-utils,
 Description: set of defaults for the Linux desktop
  Olympia is a set of configuration defaults that tear up the default
  Debian configuration in favor of the undocumented and maybe unexpected
