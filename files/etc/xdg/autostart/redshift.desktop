@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Redshift
+Comment=Shift things red.
+Exec=redshift -l 38.90:-77.03
+Terminal=false
+Type=Application
+StartupNotify=false

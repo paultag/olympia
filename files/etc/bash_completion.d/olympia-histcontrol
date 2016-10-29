@@ -1,0 +1,2 @@
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
+export HISTCONTROL=ignoreboth

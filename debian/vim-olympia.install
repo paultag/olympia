@@ -1,0 +1,4 @@
+files/usr/share/vim/addons/*                  usr/share/vim/addons
+files/usr/share/vim/registry/vim-olympia.yaml usr/share/vim/registry
+files/etc/vim/vimrc.local                     etc/vim
+files/etc/bash_completion.d/olympia-alias-vim etc/bash_completion.d

@@ -1,0 +1,86 @@
+set number
+
+set ts=4
+set t_Co=256
+set tabstop=4
+set expandtab
+set autoindent
+set smartindent
+set shiftwidth=4
+set encoding=utf-8
+set hlsearch
+set incsearch
+set modeline
+
+set mouse =
+set mouse =""
+
+filetype on
+filetype indent on
+filetype plugin on
+
+let python_highlight_all=1
+let python_highlight_space_errors=1
+let python_slow_sync=1
+let g:rainbow_active = 1
+
+autocmd FileType ruby set ts=2
+
+syntax on
+colorscheme wombat256
+
+highlight OverLength  ctermbg=red ctermfg=white guibg=red
+highlight TailSpace   ctermbg=red ctermfg=white guibg=red
+highlight ColorColumn ctermbg=red ctermfg=white guibg=red
+
+let g:rainbow_conf = {
+\   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+\   'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta', 'darkcyan'],
+\   'operators': '_,_',
+\   'parentheses': [['(',')'], ['\[','\]'], ['{','}']],
+\   'separately': {
+\       '*': {},
+\       'lisp': {
+\           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick',
+\                      'darkorchid3'],
+\           'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta', 'darkcyan',
+\                        'darkred', 'darkgreen'],
+\       },
+\       'html': {
+\           'parentheses': [['(',')'], ['\[','\]'], ['{','}'],
+\                           ['<\a[^>]*[^/]>\|<\a>','</[^>]*>']],
+\       },
+\       'tex': {
+\           'operators': '',
+\           'parentheses': [['(',')'], ['\[','\]']],
+\       },
+\   }
+\}
+
+match OverLength /\%81v.\+/
+match TailSpace  /\ +$/
+
+set colorcolumn=81
+set formatoptions=qn2  " Look into this s'more.
+
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
+map <C-Right> :tabn<CR>
+map <C-Left>  :tabp<CR>
+map <C-n>     :tabe<CR>:o .<CR>
+map <C-w>     :tabc<CR>
+
+let g:netrw_list_hide= '.*\.swp$,.*\.pyc$,.*\.egg-info.*,\.git,\.tox,\.coverage,__pycache__'
+let g:netrw_sort_by= 'time'
+
+function! CleverTab()
+    if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+        return "\<Tab>"
+    else
+        return "\<C-N>"
+    endif
+endfunction
+inoremap <Tab> <C-R>=CleverTab()<CR>

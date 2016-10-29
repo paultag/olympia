@@ -1,0 +1,9 @@
+# Some radical xterm style colors
+C_CLOK="\[\e[38;5;243m\]"
+C_USER="\[\e[38;5;85m\]"
+C_DIVD="\[\e[38;5;183m\]"
+C_HOST="\[\e[38;5;223m\]"
+C_PATH="\[\e[38;5;123m\]"
+C_REST="\[\e[0m\]"
+
+export PS1="[${C_HOST}\u${C_DIVD}@${C_USER}\h${C_REST}:${C_PATH}\w${C_REST}][${C_CLOK}\$(date '+%I:%M %p')${C_REST}] ♥  "

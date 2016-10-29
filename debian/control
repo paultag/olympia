@@ -1,0 +1,261 @@
+Source: olympia
+Section: misc
+Priority: optional
+Maintainer: Paul Tagliamonte <tag@pault.ag>
+Build-Depends: debhelper (>= 9), config-package-dev (>= 5.0~)
+Standards-Version: 3.9.6
+Homepage: https://pault.ag/
+
+# olympia-base {{{
+Package: olympia-base
+Architecture: all
+Depends: ${misc:Depends},
+ olympia-ca,
+ tmux,
+Description: set of base configurations
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains the minimal baseline configuration.
+
+# }}}
+
+# olympia-ca {{{
+Package: olympia-ca
+Architecture: all
+Depends: ${misc:Depends}
+Description: Bike Shed CA certificate
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains the Bike Shed CA
+# }}}
+
+# vim-olympia {{{
+Package: vim-olympia
+Architecture: all
+Depends: ${misc:Depends},
+ vim,
+ vim-addon-manager,
+Description: collection of vim plugins and syntax modules
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains the baseline vim configuration.
+# }}}
+
+# devel packages {{{
+# olympia-devel (main) {{{
+Package: olympia-devel
+Architecture: all
+Depends: ${misc:Depends},
+ olympia-devel-debian,
+ olympia-devel-golang,
+ olympia-devel-python,
+ olympia-devel-misc,
+ git,
+ build-essential,
+Description: core development tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package installs all development metapackages.
+# }}}
+
+# olympia-devel-misc {{{
+Package: olympia-devel-misc
+Architecture: all
+Depends: ${misc:Depends},
+ binwalk,
+ xxd,
+ jq,
+ nmap,
+ stunnel4,
+ tcpdump,
+Description: misc development tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on random tools I like.
+# }}}
+
+# olympia-devel-debian {{{
+Package: olympia-devel-debian
+Architecture: all
+Depends: ${misc:Depends},
+ git,
+ dpkg-dev,
+ sbuild,
+ packaging-dev,
+ git-buildpackage,
+ build-essential,
+ dh-golang,
+ dh-make-golang,
+ dput-ng,
+ ubuntu-dev-tools,
+Description: core Debian development tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on basic Debian development tools.
+# }}}
+
+# olympia-devel-golang {{{
+Package: olympia-devel-golang
+Architecture: all
+Depends: ${misc:Depends},
+ golang,
+ golang-go,
+Description: core Go development tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on basic Go development tools.
+# }}}
+
+# olympia-devel-python {{{
+Package: olympia-devel-python
+Architecture: all
+Depends: ${misc:Depends},
+ python3,
+ python,
+ python3-virtualenv,
+ python-virtualenv,
+ virtualenvwrapper,
+ python-pip,
+ python3-pip,
+Description: set of Python development tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on the basic Python development tools.
+# }}}
+# }}}
+
+# olympia-opensc {{{
+Package: olympia-opensc
+Architecture: all
+Depends: ${misc:Depends},
+ opensc,
+ opensc-pkcs11,
+Description: set of OpenSC tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on OpenSC tools for using a PIV card.
+# }}}
+
+# olympia-yubikey {{{
+Package: olympia-yubikey
+Architecture: all
+Depends: ${misc:Depends},
+ yubikey-luks,
+ yubikey-piv-manager,
+ yubikey-neo-manager,
+Description: set of Yubikey tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on Yubikey tools for using it as a PIV and LUKS
+ decryption device.
+# }}}
+
+# olympia-desktop {{{
+Package: olympia-desktop
+Architecture: all
+Depends: ${misc:Depends},
+ network-manager-strongswan,
+ redshift,
+Description: set of defaults for the Linux desktop
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains hacks to start up an environment, as well as depends
+ on basic Desktop tools.
+# }}}
+
+# olympia-extras {{{
+Package: olympia-extras
+Architecture: all
+Depends: ${misc:Depends},
+ obnam,
+Description: extra packages that Paul likes - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains nice to have but not critical packages.
+# }}}
+
+# olympia-serving-suggestions {{{
+Package: olympia-serving-suggestions
+Architecture: all
+Depends: ${misc:Depends},
+ olympia-base,
+ olympia-ca,
+ vim-olympia,
+ olympia-devel,
+ olympia-opensc,
+ olympia-yubikey,
+ olympia-desktop,
+ olympia-extras,
+Description: set of defaults for the Linux desktop
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains hacks to start up an environment, as well as depends
+ on basic Desktop tools.
+# }}}
+
+# vim: foldmethod=marker

@@ -1,0 +1,28 @@
+addon: olympia
+description: "welcome home"
+files:
+  - compiler/go.vim
+  - colors/wombat256.vim
+  - plugin/rainbow.vim
+  - plugin/go.vim
+  - plugin/keyboard_cat.vim
+  - ftdetect/gofiletype.vim
+  - syntax/go.vim
+  - syntax/json.vim
+  - ftplugin/go.vim
+  - autoload/go/complete.vim
+  - autoload/go/fmt.vim
+  - autoload/go/lint.vim
+  - autoload/go/import.vim
+  - autoload/go/tool.vim
+  - autoload/go/errcheck.vim
+  - autoload/go/cmd.vim
+  - autoload/go/def.vim
+  - autoload/go/ui.vim
+  - autoload/go/oracle.vim
+  - autoload/go/rename.vim
+  - autoload/go/doc.vim
+  - autoload/go/package.vim
+  - autoload/go/play.vim
+  - indent/go.vim
+  - indent/python.vim
