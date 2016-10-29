@@ -1,4 +1,4 @@
-olympia (1.0.0+nmu1) UNRELEASED; urgency=medium
+olympia (1.0.1) UNRELEASED; urgency=medium
 
   * Change -desktop to depend on pm-utils to help with power
     management.
