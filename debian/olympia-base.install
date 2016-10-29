@@ -1,4 +1,5 @@
 files/etc/motd                                      etc
+files/etc/tmux.conf                                 etc
 files/etc/bash_completion.d/olympia-histcontrol     etc/bash_completion.d
 files/etc/bash_completion.d/olympia-env             etc/bash_completion.d
 files/etc/bash_completion.d/olympia-path-override   etc/bash_completion.d
