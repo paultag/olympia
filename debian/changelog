@@ -4,6 +4,9 @@ olympia (1.0.2) UNRELEASED; urgency=medium
     which means it'll be pulled in by default on standard desktop installs.
   * Add a new metapackage for server installs that doesn't depend on the
     custom PAM work or Desktop stuff.
+  * Add a new archive .deb that contains my archive's OpenPGP keyring,
+    and sources.list entry. This isn't depended on by anything, and is
+    mostly helpful to get a new system set up quicker.
 
  -- Paul Tagliamonte <tag@pault.ag>  Sat, 05 Nov 2016 10:41:18 -0400
 
