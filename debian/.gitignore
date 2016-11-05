@@ -19,6 +19,7 @@ olympia-devel/
 
 olympia-opensc/
 olympia-yubikey/
+olympia-libpam-pkcs11/
 olympia-desktop/
 
 olympia-extras/
