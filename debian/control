@@ -200,6 +200,25 @@ Description: set of Yubikey tools - metapackage
  decryption device.
 # }}}
 
+# olympia-yubikey {{{
+Package: olympia-libpam-pksc11
+Architecture: all
+Depends: ${misc:Depends},
+ libpam-pkcs11
+Description: set of configurations for the pam-pkcs11 module
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package depends on libpam-pkcs11 and installs a few configuration
+ bits that can be helpful, such as the username mapping and the default
+ configuration for Paul's setup.
+# }}}
+
+
 # olympia-desktop {{{
 Package: olympia-desktop
 Architecture: all
