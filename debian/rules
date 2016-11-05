@@ -2,12 +2,18 @@
 %:
 	dh $@ --with=config-package
 
-# some of you might be wondering why I'm doing this in auto_install - and
-# the reason is because this is basically just a copy, I don't think it's
-# so big as to put this into build indep, even though it's not exactly right.
+
+ARCHIVE_GPG=gpg --no-default-keyring --keyring=$(CURDIR)/olympia.keyring.gpg
+
+override_dh_auto_build:
+	dh_auto_build
+	$(ARCHIVE_GPG) --import < olympia.asc
+
 override_dh_auto_install:
 	dh_auto_install
 	mkdir -p $(CURDIR)/debian/tmp/etc/apt/trusted.gpg.d/
-	gpg --no-default-keyring \
-		--keyring=$(CURDIR)/debian/tmp/etc/apt/trusted.gpg.d/olympia.gpg \
-		--import < olympia.asc
+	$(ARCHIVE_GPG) --export > $(CURDIR)/debian/tmp/etc/apt/trusted.gpg.d/olympia.gpg
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -vf $(CURDIR)/olympia.keyring.gpg
