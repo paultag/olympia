@@ -200,8 +200,8 @@ Description: set of Yubikey tools - metapackage
  decryption device.
 # }}}
 
-# olympia-yubikey {{{
-Package: olympia-libpam-pksc11
+# olympia-libpam-pkcs11 {{{
+Package: olympia-libpam-pkcs11
 Architecture: all
 Depends: ${misc:Depends},
  libpam-pkcs11
@@ -217,7 +217,6 @@ Description: set of configurations for the pam-pkcs11 module
  bits that can be helpful, such as the username mapping and the default
  configuration for Paul's setup.
 # }}}
-
 
 # olympia-desktop {{{
 Package: olympia-desktop
