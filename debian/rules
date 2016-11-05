@@ -1,3 +1,13 @@
 #!/usr/bin/make -f
 %:
 	dh $@ --with=config-package
+
+# some of you might be wondering why I'm doing this in auto_install - and
+# the reason is because this is basically just a copy, I don't think it's
+# so big as to put this into build indep, even though it's not exactly right.
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p $(CURDIR)/debian/tmp/etc/apt/trusted.gpg.d/
+	gpg --no-default-keyring \
+		--keyring=$(CURDIR)/debian/tmp/etc/apt/trusted.gpg.d/olympia.gpg \
+		--import < olympia.asc

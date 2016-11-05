@@ -6,6 +6,21 @@ Build-Depends: debhelper (>= 9), config-package-dev (>= 5.0~)
 Standards-Version: 3.9.6
 Homepage: https://pault.ag/
 
+# olympia-archive {{{
+Package: olympia-archive
+Architecture: all
+Depends: ${misc:Depends},
+Description: remote archive configuration package
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains the apt repo configuration
+# }}}
+
 # olympia-base {{{
 Package: olympia-base
 Architecture: all

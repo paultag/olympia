@@ -1,0 +1,2 @@
+files/etc/apt/sources.list.d/olympia.list    etc/apt/sources.list.d
+etc/apt/trusted.gpg.d/olympia.gpg            etc/apt/trusted.gpg.d
