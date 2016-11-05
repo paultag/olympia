@@ -1,6 +1,9 @@
 olympia (1.0.1) olympia-unstable; urgency=medium
 
-  * 
+  * Add a new module, olympia-libpam-pkcs11, which depends on libpam-pkcs11,
+    and installs some configs that make sense for me (a CA, my CN mappings),
+    and the pam-auth template. Run `pklogin_finder` to make sure this all
+    works before swapping PAM modules over.
 
  -- Paul Tagliamonte <tag@pault.ag>  Sat, 29 Oct 2016 14:15:34 -0400
 
