@@ -264,6 +264,7 @@ Depends: ${misc:Depends},
  olympia-yubikey,
  olympia-desktop,
  olympia-extras,
+ olympia-libpam-pkcs11,
 Description: set of defaults for the Linux desktop
  Olympia is a set of configuration defaults that tear up the default
  Debian configuration in favor of the undocumented and maybe unexpected
