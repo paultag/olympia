@@ -252,6 +252,25 @@ Description: extra packages that Paul likes - metapackage
  This package contains nice to have but not critical packages.
 # }}}
 
+# olympia-server {{{
+Package: olympia-server
+Architecture: all
+Depends: ${misc:Depends},
+ olympia-base,
+ olympia-ca,
+ vim-olympia,
+Description: set of defaults for a Linux server
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package contains hacks to start up an environment, as well as depends
+ on basic server tools.
+# }}}
+
 # olympia-serving-suggestions {{{
 Package: olympia-serving-suggestions
 Architecture: all
