@@ -71,6 +71,24 @@ Description: collection of vim plugins and syntax modules
  This package contains the baseline vim configuration.
 # }}}
 
+# markdown hacking {{{
+Package: olympia-markdown
+Architecture: all
+Depends: ${misc:Depends},
+ pandoc,
+ texlive-latex-recommended,
+ texlive-latex-extra,
+Description: markdown hacking tools - metapackage
+ Olympia is a set of configuration defaults that tear up the default
+ Debian configuration in favor of the undocumented and maybe unexpected
+ configuration that Paul Tagliamonte enjoys.
+ .
+ As such, this is likely unusable for most of the population. That's OK,
+ you're normal.
+ .
+ This package installs packages needed to work with markdown files.
+# }}}
+
 # devel packages {{{
 # olympia-devel (main) {{{
 Package: olympia-devel
