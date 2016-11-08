@@ -1,3 +1,11 @@
+olympia (1.0.3) UNRELEASED; urgency=medium
+
+  * Add a new package - olympia-markdown, which contains dependencies
+    on packages needed to process markdown. Mostly, I compile markdown
+    to PDFs, so this is all it depends on at the moment.
+
+ -- Paul Tagliamonte <tag@pault.ag>  Mon, 07 Nov 2016 22:21:33 -0500
+
 olympia (1.0.2) olympia-unstable; urgency=medium
 
   * Add a Depends on olympia-libpam-pkcs11 from olympia-serving-suggestions,
