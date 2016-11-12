@@ -10,6 +10,7 @@ Homepage: https://pault.ag/
 Package: olympia-archive
 Architecture: all
 Depends: ${misc:Depends},
+ apt-transport-https,
 Description: remote archive configuration package
  Olympia is a set of configuration defaults that tear up the default
  Debian configuration in favor of the undocumented and maybe unexpected
