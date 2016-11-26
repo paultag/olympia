@@ -1,3 +1,13 @@
+olympia (1.0.4) olympia-unstable; urgency=medium
+
+  * Change the location of the archive to the new S3 location, until
+    I set up a CNAME for the archive. At the moment, this is going to
+    wind up more stable and secure, since I can process the archive on
+    the LAN, and push it to the internet, rather than having an online
+    archive key.
+
+ -- Paul Tagliamomnte <tag@pault.ag>  Sat, 26 Nov 2016 13:46:05 -0500
+
 olympia (1.0.3) olympia-unstable; urgency=medium
 
   * Add a new package - olympia-markdown, which contains dependencies
