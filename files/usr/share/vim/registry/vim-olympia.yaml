@@ -3,6 +3,7 @@ description: "welcome home"
 files:
   - compiler/go.vim
   - colors/wombat256.vim
+  - plugin/sslsecure.vim
   - plugin/rainbow.vim
   - plugin/go.vim
   - plugin/keyboard_cat.vim
