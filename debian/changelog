@@ -1,3 +1,11 @@
+olympia (1.0.5) olympia-unstable; urgency=medium
+
+  * Add in sslsecure.vim
+    This plugin will highlight bad ciphers. Thanks to Chris Aumann for
+    writing this.
+
+ -- Paul Tagliamonte <tag@pault.ag>  Fri, 28 Apr 2017 23:02:49 -0400
+
 olympia (1.0.4) olympia-unstable; urgency=medium
 
   * Change the location of the archive to the new S3 location, until
