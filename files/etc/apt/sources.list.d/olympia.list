@@ -1,1 +1,1 @@
-deb [arch=all] http://olympia.shed.bike.s3.amazonaws.com/olympia olympia-unstable main
+deb [arch=all,amd64] http://olympia.shed.bike.s3.amazonaws.com/olympia olympia-unstable main
