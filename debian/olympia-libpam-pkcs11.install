@@ -1,6 +1,8 @@
 # Yank the CA from the CA package files (really this should likely be
 # a Depends relationship or something)
-files/usr/share/olympia-ca/Bike_Shed_CA.crt   etc/pam_pkcs11/cacerts
-files/etc/pam_pkcs11/pam_pkcs11.conf          etc/pam_pkcs11
-files/etc/pam_pkcs11/olympia_cn_mapper        etc/pam_pkcs11
-files/usr/share/pam-configs/olympia           usr/share/pam-configs
+files/usr/share/olympia-ca/Bike_Shed_CA.crt        etc/pam_pkcs11/cacerts
+files/usr/share/olympia-ca/self-signed-ca-1.crt    etc/pam_pkcs11/cacerts
+files/usr/share/olympia-ca/self-signed-root-ca.crt etc/pam_pkcs11/cacerts
+files/etc/pam_pkcs11/pam_pkcs11.conf               etc/pam_pkcs11
+files/etc/pam_pkcs11/olympia_cn_mapper             etc/pam_pkcs11
+files/usr/share/pam-configs/olympia                usr/share/pam-configs

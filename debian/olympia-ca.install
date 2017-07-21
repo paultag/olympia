@@ -1,1 +1,3 @@
-files/usr/share/olympia-ca/Bike_Shed_CA.crt   usr/share/olympia-ca
+files/usr/share/olympia-ca/Bike_Shed_CA.crt        usr/share/olympia-ca
+files/usr/share/olympia-ca/self-signed-ca-1.crt    usr/share/olympia-ca
+files/usr/share/olympia-ca/self-signed-root-ca.crt usr/share/olympia-ca
