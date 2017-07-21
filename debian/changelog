@@ -1,3 +1,9 @@
+olympia (1.0.7) olympia-unstable; urgency=medium
+
+  * Add amd64 to sources
+
+ -- Paul Tagliamonte <tag@pault.ag>  Fri, 21 Jul 2017 13:39:39 -0400
+
 olympia (1.0.6) olympia-unstable; urgency=medium
 
   * Add self.signed.pub CA
