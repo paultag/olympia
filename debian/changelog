@@ -1,3 +1,10 @@
+olympia (1.0.6) olympia-unstable; urgency=medium
+
+  * Add self.signed.pub CA
+  * Change PKCS11 PAM auth from CN mapping to Email mapping
+
+ -- Paul Tagliamonte <tag@pault.ag>  Fri, 21 Jul 2017 13:34:37 -0400
+
 olympia (1.0.5) olympia-unstable; urgency=medium
 
   * Add in sslsecure.vim
