@@ -1,3 +1,9 @@
+olympia (1.0.8) olympia-unstable; urgency=medium
+
+  * Remove arch restriction.
+
+ -- Paul Tagliamonte <tag@pault.ag>  Mon, 28 Aug 2017 15:40:42 -0400
+
 olympia (1.0.7) olympia-unstable; urgency=medium
 
   * Add amd64 to sources
