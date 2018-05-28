@@ -1,3 +1,4 @@
 #
 
 alias vim="vim -p"
+alias ip="ip --color"
