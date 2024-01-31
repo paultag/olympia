@@ -27,3 +27,14 @@ files:
   - autoload/go/play.vim
   - indent/go.vim
   - indent/python.vim
+  - autoload/cargo.vim
+  - autoload/rust.vim
+  - autoload/rustfmt.vim
+  - compiler/cargo.vim
+  - compiler/rustc.vim
+  - ftdetect/rust.vim
+  - ftplugin/rust.vim
+  - indent/rust.vim
+  - plugin/cargo.vim
+  - plugin/rust.vim
+  - syntax/rust.vim

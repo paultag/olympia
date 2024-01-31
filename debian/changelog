@@ -1,3 +1,9 @@
+olympia (1.0.10) UNRELEASED; urgency=medium
+
+  * Add in better Rust support
+
+ -- Paul Tagliamonte <tag@pault.ag>  Thu, 31 Aug 2023 17:12:39 -0400
+
 olympia (1.0.9) olympia-unstable; urgency=medium
 
   * add --color to ip. this shit's lifechanging.
